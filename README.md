@@ -71,8 +71,8 @@ I initially tried updating the DOM directly for every action, which led to incon
 **3. Inline task editing (Bonus feature)**  
 Switching a task between display mode and edit mode required replacing the `<span>` with an `<input>` on double-click, focusing it, and then handling both Enter (save) and Escape (cancel) without interfering with the main list listener. Managing these two keyboard events cleanly inside a delegated listener took careful use of `event.key` checks.
 
-## Screenshots (optional)
-![To-Do List App](path/to/screenshot.png)
+## Screenshots 
+![To-Do List App](to-do list.JPG)
 
-## Live Demo (if deployed)
+## Live Demo 
 [View Live Demo](https://connie-cloud-svg.github.io/iyf-s10-week-05-Connie-cloud-svg)
