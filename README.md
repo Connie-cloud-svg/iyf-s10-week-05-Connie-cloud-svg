@@ -11,7 +11,7 @@ This week focused on making web pages interactive using the Document Object Mode
 ## Technologies Used
 - HTML5
 - CSS3
-- JavaScript (Vanilla)
+- JavaScript 
 - DOM Web API
 
 ## Features
