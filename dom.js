@@ -107,7 +107,9 @@ Object.assign(container.style, {
     padding: "20px"
 });
 
+
 // Creating Elements
+
 // Create new element
 const newParagraph = document.createElement("p");
 newParagraph.textContent = "This is a new paragraph!";
@@ -119,18 +121,13 @@ article.appendChild(newParagraph);  // Add at end
 
 // Insert before another element
 const firstParagraph = article.querySelector("p");
-article.insertBefore(newParagraph, firstParagraph);  // Add before first p
+if (firstParagraph) {
+    article.insertBefore(newParagraph, firstParagraph);
+    firstParagraph.after(newParagraph);
+} else {
+    article.appendChild(newParagraph);
+}   // Add before first p
 
-// Modern insertion methods
-//article.prepend(newParagraph);         // First child
-//article.append(newParagraph);          // Last child
-//firstParagraph.before(newParagraph);   // Before sibling
-firstParagraph.after(newParagraph);    // After sibling
-
-//Removing Elements
-// Remove an element
-//const footer = document.querySelector("footer");
-//footer.remove();
 
 //Cloning Elements
 const navItem = document.querySelector(".nav-link").parentElement;
@@ -230,13 +227,63 @@ changeColorBtn.addEventListener("click", function() {
     });
 });
 
+
+// Numbered paragraphs with delete
 const addparagraphBtn = document.getElementById("add-paragraph");
 
-addparagraphBtn.addEventListener("click", function() {
+
+let paragraphCount = 0;
+addparagraphBtn.addEventListener("click", function () {
+    paragraphCount++;
+
+    const wrapper = document.createElement("div");
+    wrapper.className = "dynamic-entry";
+
     const newParagraph = document.createElement("p");
-    newParagraph.textContent = "A new paragraph added via JavaScript!";
+    newParagraph.textContent = `#${paragraphCount} — A new paragraph added via JavaScript!`;
     newParagraph.className = "content";
-    article.appendChild(newParagraph);
+
+    
+    wrapper.appendChild(newParagraph);
+    article.appendChild(wrapper);
+});
+
+
+//  Image hide/show toggle + remover 
+const toggleImageBtn = document.getElementById("toggle-image-btn");
+const removeImageBtn = document.getElementById("remove-image-btn");
+const practiceImage = document.getElementById("practice-image");
+
+let imageVisible = true;
+
+toggleImageBtn.addEventListener("click", function () {
+    imageVisible = !imageVisible;
+    practiceImage.style.display = imageVisible ? "block" : "none";
+    toggleImageBtn.textContent = imageVisible ? "Hide Image" : "Show Image";
+});
+
+removeImageBtn.addEventListener("click", function () {
+    practiceImage.remove();
+    toggleImageBtn.disabled = true;
+    removeImageBtn.disabled = true;
+    document.getElementById("image-status").textContent = "Image has been removed.";
+});
+
+
+//  Content copier
+const copyBtn = document.getElementById("copy-content-btn");
+const clearBtn2 = document.getElementById("clear-target-btn");
+const sourceDiv = document.getElementById("source-div");
+const targetDiv = document.getElementById("target-div");
+
+copyBtn.addEventListener("click", function () {
+    targetDiv.innerHTML = sourceDiv.innerHTML;
+    document.getElementById("copy-status").textContent = "✓ Content copied!";
+});
+
+clearBtn2.addEventListener("click", function () {
+    targetDiv.innerHTML = "";
+    document.getElementById("copy-status").textContent = "Target cleared.";
 });
 
 

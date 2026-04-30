@@ -29,7 +29,6 @@
         <p class="content">This is the second paragraph.</p>
       </article>
 
-      <button id="add-paragraph">Add Paragraph</button>
 
       <section>
         <h2>Form Section</h2>
@@ -48,6 +47,46 @@
       </div>
 
       <button id="change-color">Change Heading Color</button>
+
+<section>
+    <h2>Day 2 — Dynamic Paragraphs</h2>
+    <button id="add-paragraph">Add Paragraph</button>
+    <button id="clear-paragraphs">Clear Paragraphs</button>
+    <div id="dynamic-list"></div>
+</section>
+
+<!-- Image toggle + remover -->
+<section>
+    <h2>Image Toggle &amp; Remover</h2>
+    <img
+        id="practice-image"
+        src="images/tasklist.png"
+        alt="Practice image"
+        style="display:block; border-radius:8px; margin-bottom:0.5rem;"
+    />
+    <p id="image-status"></p>
+    <button id="toggle-image-btn">Hide Image</button>
+    <button id="remove-image-btn">Remove Image</button>
+</section>
+
+<!-- Content copier -->
+<section>
+    <h2>Content Copier</h2>
+    <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+        <div id="source-div" style="flex:1; border:1px solid #ccc; padding:1rem; border-radius:8px;">
+            <h3>Source</h3>
+            <p>This is <strong>rich</strong> content.</p>
+            <p>It has <em>multiple</em> paragraphs.</p>
+        </div>
+        <div id="target-div" style="flex:1; border:1px dashed #ccc; padding:1rem; border-radius:8px; color:#999;">
+            <h3>Target</h3>
+            <p>This is where the copied content will appear.</p>
+        </div>
+    </div>
+    <p id="copy-status"></p>
+    <button id="copy-content-btn">Copy →</button>
+    <button id="clear-target-btn">Clear Target</button>
+</section>
     </main>
 
     <footer>
