@@ -209,3 +209,27 @@ document.addEventListener("keydown", function(e) {
     }
 
 });
+
+const changeColorBtn = document.getElementById("change-color");
+
+const hexDigits = "0123456789ABCDEF";
+
+function randomHexColor() {
+    let color = "#";
+    for (let i = 0; i < 6; i++) {
+        color += hexDigits[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+
+changeColorBtn.addEventListener("click", function() {
+    const heading = document.querySelectorAll("h1, h2, h3");
+    heading.forEach(function(h) {
+        h.style.color = randomHexColor();
+    });
+});
+
+
+
+

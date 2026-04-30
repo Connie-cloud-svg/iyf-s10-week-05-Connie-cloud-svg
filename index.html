@@ -32,18 +32,20 @@
       <section>
         <h2>Form Section</h2>
         <form id="contact-form">
-          <input type="text" id="name" name="name" placeholder="Name" />
-          <input type="email" id="email" name="email" placeholder="Email" />
+          <input type="text" id="name" name="name" placeholder="Name" autocomplete="given-name"/>
+          <input type="email" id="email" name="email" placeholder="Email" autocomplete="email"/>
           <button type="submit">Submit</button>
         </form>
       </section>
 
       <div id="counter-container">
-        <h2 id="count-display">0</h2>
+        <h3 id="count-display">0</h3>
         <button id="increase-btn">+</button>
         <button id="decrease-btn">-</button>
         <button id="reset-btn">Reset</button>
       </div>
+
+      <button id="change-color">Change Heading Color</button>
     </main>
 
     <footer>
