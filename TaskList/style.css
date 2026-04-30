@@ -8,14 +8,14 @@
 }
 
 :root {
-    --bg:           #f5f0eb;
-    --surface:      #ffffff;
-    --surface-2:    #f0ebe4;
+    --accent:       #f4547a; 
+    --accent-fg:    #ffe8ee; 
+    --bg:           #ede8e3;
+    --surface:      #f0ebe5;   
+    --surface-2:    #e8e2db;
     --border:       #e0d8ce;
     --text:         #2c2825;
-    --text-muted:   #8a7f76;
-    --accent:       burlywood;
-    --accent-fg:    bisque;
+    --text-muted:   #8a7f76; 
     --danger:       #c0392b;
     --done-text:    #a89f96;
     --shadow:       0 2px 12px rgba(0,0,0,0.08);
