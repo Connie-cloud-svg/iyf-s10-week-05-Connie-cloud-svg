@@ -115,9 +115,6 @@
         taskList.appendChild(item);
       });
     }
- 
-    // Initial rend
-    render();
 
     // ── LocalStorage ───────────────────────────────────────────────────
 function saveTasks() {
