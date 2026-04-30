@@ -37,11 +37,11 @@ This week focused on making web pages interactive using the Document Object Mode
 - Real-time form validation with regex for email and length checks for name
 
 ### Daily Challenges
-- **Day 1:** Random color changer for all heading elements
-- **Day 2:** Dynamic paragraph creator with numbered entries and delete buttons
+- **Day 1:** Random color changer for all heading elements - (dom.js)
+- **Day 2:** Dynamic paragraph creator with numbered entries and delete buttons (dom.js)
 - **Day 3:** Image remover / hide-show toggle
 - **Day 4:** Content copier between two divs
-- **Day 5:** Dark mode toggle with body class switching
+- **Day 5:** Dark mode toggle with body class switching (tasklist)
 
 ## How to Run
 1. Clone this repository:
@@ -73,6 +73,7 @@ Switching a task between display mode and edit mode required replacing the `<spa
 
 ## Screenshots 
 ![To-Do List App](images/to-dolist.JPG)
+![Task List App](images/tasklist.png)
 
 ## Live Demo 
 [View Live Demo](https://connie-cloud-svg.github.io/iyf-s10-week-05-Connie-cloud-svg)
