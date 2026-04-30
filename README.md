@@ -39,8 +39,8 @@ This week focused on making web pages interactive using the Document Object Mode
 ### Daily Challenges
 - **Day 1:** Random color changer for all heading elements - (dom.js)
 - **Day 2:** Dynamic paragraph creator with numbered entries and delete buttons (dom.js)
-- **Day 3:** Image remover / hide-show toggle
-- **Day 4:** Content copier between two divs
+- **Day 3:** Image remover / hide-show toggle (dom.js)
+- **Day 4:** Content copier between two divs (dom.js)
 - **Day 5:** Dark mode toggle with body class switching (tasklist) - DarkMode is way prettier.Blends in   with the pink
 
 ## How to Run
