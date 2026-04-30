@@ -230,6 +230,19 @@ changeColorBtn.addEventListener("click", function() {
     });
 });
 
+const addparagraphBtn = document.getElementById("add-paragraph");
+
+addparagraphBtn.addEventListener("click", function() {
+    const newParagraph = document.createElement("p");
+    newParagraph.textContent = "A new paragraph added via JavaScript!";
+    newParagraph.className = "content";
+    article.appendChild(newParagraph);
+});
+
+
+
+
+
 
 
 
